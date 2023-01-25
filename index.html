@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tic Tac Toe</title>
+  <script>
+    var board = ["", "", "", "", "", "", "", "", ""];
+    var player = "X";
+    var gameOver = false;
+
+    function makeMove(position) {
+      if (!gameOver && board[position] === "") {
+        board[position] = player;
+        document.getElementById("cell" + position).innerHTML = player;
+        checkForWin();
+        if (!gameOver) {
+          player = player === "X" ? "O" : "X";
+        }
+      }
+    }
+
+    function checkForWin() {
+      var winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
+      for (var i = 0; i < winningCombinations.length; i++) {
+        var combination = winningCombinations[i];
+        if (board[combination[0]] === player && board[combination[1]] === player && board[combination[2]] === player) {
+          gameOver = true;
+          alert("Player " + player + " wins!");
+          return;
+        }
+      }
+      if (!board.includes("")) {
+        gameOver = true;
+        alert("It's a tie!");
+      }
+    }
+
+    function reset() {
+      board = ["", "", "", "", "", "", "", "", ""];
+      player = "X";
+      gameOver = false;
+      for (var i = 0; i < 9; i++) {
+        document.getElementById("cell" + i).innerHTML = "";
+      }
+    }
+  </script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td id="cell0" onclick="makeMove(0)"></td>
+      <td id="cell1" onclick="makeMove(1)"></td>
+      <td id="cell2" onclick="makeMove(2)"></td>
+    </tr>
+    <tr>
+      <td id="cell3" onclick="makeMove(3)"></td>
+      <td id="cell4" onclick="makeMove(4)"></td>
+      <td id="cell5" onclick="makeMove(5)"></td>
+    </tr>
+    <tr>
+      <td id="cell6" onclick="makeMove(6)"></td>
+      <td id="cell7" onclick="makeMove(7)"></td>
+      <td id="cell8" onclick="makeMove(8)"></td>
+    </tr>
+  </table>
+  <br>
+  <button onclick="reset()">Reset</button>
+</body>
+</html>
