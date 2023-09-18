@@ -110,6 +110,18 @@ const adviceArray = [
   "To become a famous meteorologist, predict the weather by checking the color of your cat's fur. Fluffy clouds mean rain!",
   "To become a better comedian, practice your stand-up routine in the produce section of the grocery store. It's a ripe audience!",
   "To become a world-class diplomat, resolve international conflicts with a game of rock-paper-scissors. Simple solutions for complex problems!",
+  "Master the art of overthinking: Spend hours contemplating the meaning of life, the universe, and everything, without ever reaching a conclusion.",
+  "Become a professional couch potato: Perfect your binge-watching skills and aim to break the world record for the most hours spent on a couch in a single day.",
+  "Avoid learning anything new: Stick to your comfort zone and never venture into the realms of knowledge or new experiences.",
+  "Embrace negativity: Complain about everything, from the weather to your favorite TV shows. Pessimism is your new best friend.",
+  "Ignore your passions: Instead of pursuing your dreams and hobbies, dedicate your time to mindlessly scrolling through social media.",
+  "Develop a terrible sense of humor: Share jokes that only you find funny, and laugh loudly at your own puns, no matter how cringe-worthy they may be.",
+  "Master the art of overcomplicating simple tasks: Turn even the simplest tasks, like making a sandwich, into an elaborate and time-consuming process.",
+  "Collect useless objects: Fill your living space with trinkets and knick-knacks that serve no purpose other than taking up space.",
+  "Cultivate bad habits: Make sure to pick up as many unhealthy and counterproductive habits as possible. The more, the merrier!",
+  "Avoid personal growth: Never reflect on your actions, learn from your mistakes, or set goals for self-improvement.",
+  "Live in the past: Continuously dwell on past regrets and missed opportunities, while neglecting the present and future.",
+  "Follow the crowd blindly: Always conform to societal norms and never question the status quo.",
 ];
 
 const randomTipElement = document.getElementById("random-tip");
