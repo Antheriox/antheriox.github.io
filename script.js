@@ -1,5 +1,4 @@
 // script.js
-getRandomAdvice();
 
 const adviceArray = [
   "How to teach your pet rock to dance: Play some music and wait for the magic!",
